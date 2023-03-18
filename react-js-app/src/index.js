@@ -1,34 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import ListUserComponent from "./component/ListUserComponent";
-import AddUserComponent from "./component/AddUserComponent";
-import EditUserComponent from "./component/EditUserComponent";
-
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <ListUserComponent/>,
-    },
-    {
-        path: "/users",
-        element: <ListUserComponent/>,
-    },
-    {
-        path: "/add-user",
-        element: <AddUserComponent/>,
-    },
-    {
-        path: "/edit-user",
-        element: <EditUserComponent/>,
-    }
-]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <RouterProvider router={router}/>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </React.StrictMode>
 );
 

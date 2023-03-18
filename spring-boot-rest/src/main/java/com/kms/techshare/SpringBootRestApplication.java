@@ -21,7 +21,7 @@ public class SpringBootRestApplication {
 			user1.setFirstName("Mona");
 			user1.setLastName("Lisa");
 			user1.setGender("Female");
-			user1.setAge(20);
+			user1.setAge(226);
 			user1.setUsername("monalisa");
 			user1.setPassword("monalisa123");
 			userDao.save(user1);
@@ -30,10 +30,28 @@ public class SpringBootRestApplication {
 			user2.setFirstName("Michael");
 			user2.setLastName("Jackson");
 			user2.setGender("Male");
-			user2.setAge(31);
+			user2.setAge(50);
 			user2.setUsername("michael");
 			user2.setPassword("michael");
 			userDao.save(user2);
+
+			User user3 = new User();
+			user3.setFirstName("Will");
+			user3.setLastName("Smith");
+			user3.setGender("Male");
+			user3.setAge(54);
+			user3.setUsername("will");
+			user3.setPassword("will");
+			userDao.save(user3);
+
+			User user4 = new User();
+			user4.setFirstName("Jonny");
+			user4.setLastName("Depp");
+			user4.setGender("Male");
+			user4.setAge(59);
+			user4.setUsername("jonny");
+			user4.setPassword("jonny");
+			userDao.save(user4);
 		};
 	}
 }

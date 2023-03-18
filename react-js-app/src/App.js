@@ -1,12 +1,17 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import AppRouter from './component/RouterComponent';
+import NavBar from './layout/NavBar';
+import { Container } from '@mui/material';
+import AppRouter from './page/Router';
 
 function App() {
   return (
-    <div className="container">
-      <AppRouter />
+    <div>
+      <NavBar />
+      <Container>
+        <AppRouter />
+      </Container>
     </div>
   );
 }
